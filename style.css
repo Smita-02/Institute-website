@@ -1,73 +1,137 @@
-body {
+/* ------------------------ */
+/* GLOBAL STYLES */
+/* ------------------------ */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HERO SECTION WITH LOGO */
+/* ------------------------ */
+.hero {
+    position: relative;
+    padding: 40px 20px;
+    background: #e9f5ee;
     text-align: center;
 }
-/* Sidebar */
-#sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 220px;
-    height: 100%;
-    background: #003366;
-    padding-top: 60px;
+
+.hero-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 150px;       /* adjust size */
+    margin-bottom: 20px;
+}
+
+/* Modern Hero Title Style */
+.hero-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0f5132;
+    margin-bottom: 15px;
+}
+
+/* Modern Hero Subtitle */
+.hero-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #2b6e44;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #3bb45c;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-#sidebar ul {
-    list-style: none;
-    padding: 0;
+.btn-primary:hover {
+    background: #2d9449;
 }
 
-#sidebar ul li {
-    margin: 20px 0;
-}
-
-#sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Menu Button */
-#menu-btn {
-    font-size: 28px;
-    cursor: pointer;
-    margin: 15px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-.institution-title {
-    font-size: 3rem;
-    font-weight: 900;
+/* ------------------------ */
+/* COURSES SECTION */
+/* ------------------------ */
+.courses {
+    padding: 60px 20px;
+    background: white;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1.5px;
-    margin-top: 20px;
 }
 
-/* Logo */
-.logo-container img {
-    width:180px;
-    margin-top: 20px;
+.courses h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* Description */
-.description {
-    margin: 20px;
-    font-size: 18px;
-    line-height: 1.5;
+/* ------------------------ */
+/* TESTIMONIALS */
+/* ------------------------ */
+.testimonials {
+    padding: 60px 20px;
+    background: #eef7ef;
+    text-align: center;
 }
 
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #f2f2f2;
-    padding: 10px 0;
-    font-size: 14px;
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
+
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+.footer {
+    background: #1f1f1f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 6px 0;
+}
+
+/* ------------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------------ */
+@media (max-width: 768px) {
+    .logo {
+        width: 90px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+
+
